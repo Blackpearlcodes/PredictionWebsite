@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 2em 1em;
+    line-height: 1.5em;
+}
+
+form {
+    background-color: rgb(251, 249, 249);
+    border-radius: 25px;
+    border: 12px solid rgb(251, 249, 249);
+    display: grid;
+    grid-gap: 1em;
+    padding: 1em;
+    width:auto;
+    max-height:auto;
+    margin: 25px;
+}
+
+label {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form button {
+   margin: auto;
+   width:30vh; 
+   height: 45px;
+}
+
+form button:hover {
+    background-color: rgb(240, 240, 249);
+}
+
+
+
+footer {
+    margin-top: 3em;
+    padding-top: 1.5em;
+    border-top: 1px solid white;
+}
+
+header {
+    margin-bottom: 3em;
+    padding-bottom: 1.5em;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#dog-pic{
+    margin: auto;
+}
+
+#show_msg{
+    border: 1px solid gray;
+    border-radius: 1px;
+    height: 45px;
+    background-color: white;
+    text-align: center;
+}
