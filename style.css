@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -40,8 +40,6 @@ form button {
 form button:hover {
     background-color: rgb(240, 240, 249);
 }
-
-
 
 footer {
     margin-top: 3em;
