@@ -1,11 +1,9 @@
-////////////////////////////////////////////////////////////////////////////////
 //////*          Variables that reference elements on page.
 
 const pic = document.querySelector("#dog-pic");
 const button = document.querySelector("#btn");
 var input = document.getElementById("name");
 
-////////////////////////////////////////////////////////////////////////////////
 //////*          Function to random picture of dogs from API.
 
 const getDogPicURL = async () => {
@@ -30,13 +28,11 @@ window.addEventListener("DOMContentLoaded", event => {
   });
 });
 
-////////////////////////////////////////////////////////////////////////////////
 //////*          Function to return objects from APIs and print values on page. 
 
 async function getData() {
   let name = document.getElementById("name").value;
 
-    //////////////////////////////
     ////// Age Api
   if (name.length == 0) {
     window.alert("Invalid name");
@@ -45,7 +41,6 @@ async function getData() {
     age = await age.json();
     age = age.age;
 
-    //////////////////////////////
     ////// Nationality API
     let nationality = await fetch("https://api.nationalize.io?name=" + name);
     nationality = await nationality.json();
@@ -56,7 +51,6 @@ async function getData() {
     nationality2 = await nationality2.json();
     nationality2 = nationality2.name;
 
-    //////////////////////////////
     ////// Gender API
     let sex = await fetch("https://api.genderize.io?name=" + name);
     sex = await sex.json();
